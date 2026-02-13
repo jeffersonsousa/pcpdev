@@ -77,7 +77,7 @@ Funcionalidade: Validar Filtros de Pesquisa do PCPDev
       | Publicação |
 
     @cenario6
-    # CT006: Validação por Tipo de Julgamento (Novo)
+    # CT006: Validação por Tipo de Julgamento
   Cenário: Filtrar processos por Tipo de Julgamento
     Quando seleciono o julgamento "<julgamento>"
     E clico em buscar
@@ -98,7 +98,7 @@ Funcionalidade: Validar Filtros de Pesquisa do PCPDev
     Entao devo visualizar a lista de resultados
 
     @cenario8
-  # CT008: O Teste de Ouro - Todos os Filtros Juntos (Atualizado)
+  # CT008: O Teste de Ouro - Todos os Filtros Juntos
   Cenário: Busca refinada com combinação total de filtros
     Quando seleciono o status "Em Andamento"
     E seleciono a modalidade "Pregão"
