@@ -98,7 +98,7 @@ Funcionalidade: Validar Filtros de Pesquisa do PCPDev
     Entao devo visualizar a lista de resultados
 
     @cenario8
-  # CT008: O Teste de Ouro - Todos os Filtros Juntos
+  # CT008: Todos os Filtros Juntos
   Cenário: Busca refinada com combinação total de filtros
     Quando seleciono o status "Em Andamento"
     E seleciono a modalidade "Pregão"
