@@ -77,18 +77,33 @@ Funcionalidade: Validar Filtros de Pesquisa do PCPDev
       | Publicação |
 
     @cenario6
-    # CT006: Busca por Período Específico
+    # CT006: Validação por Tipo de Julgamento (Novo)
+  Cenário: Filtrar processos por Tipo de Julgamento
+    Quando seleciono o julgamento "<julgamento>"
+    E clico em buscar
+    Entao devo visualizar a lista de resultados
+
+    Exemplos:
+      | julgamento               |
+      | Menor Preço              |
+      | Maior Desconto           |
+      | Técnica e Preço          |
+      | Conteúdo Artístico       |
+
+    @cenario7
+    # CT007: Busca por Período Específico
   Cenário: Buscar processos publicados em um intervalo de datas
     Quando informo o período de "08/02/2026" a "11/02/2026"
     E clico em buscar
     Entao devo visualizar a lista de resultados
 
-    @cenario7
-  # CT007: Todos os Filtros Juntos
+    @cenario8
+  # CT008: O Teste de Ouro - Todos os Filtros Juntos (Atualizado)
   Cenário: Busca refinada com combinação total de filtros
     Quando seleciono o status "Em Andamento"
     E seleciono a modalidade "Pregão"
     E seleciono a realização "Eletrônico"
+    E seleciono o julgamento "Menor Preço"  
     E seleciono a UF "DF"
     E aguardo o carregamento dos municípios
     E seleciono o município "Brasília"

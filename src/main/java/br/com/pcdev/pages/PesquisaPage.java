@@ -25,6 +25,7 @@ public class PesquisaPage {
     private By selectRealizacao = By.xpath("//*[@id='Realizacao']");
     private By selectUF = By.xpath("//*[@id='UF']");
     private By selectMunicipios = By.xpath("//*[@id='municipios']");
+    private By selectJulgamento = By.xpath("//*[@id='julgamento']");
     
     // Data / Período
     private By labelPeriodo = By.xpath("//*[@id='pesquisa-p']/div[4]/div[5]/label");
@@ -119,6 +120,10 @@ private By inputDataFim = By.xpath("//*[@id='pesquisa-p']//input[@placeholder='D
 
     public void selecionarMunicipio(String municipio) {
         selecionarCombo(selectMunicipios, municipio);
+    }
+
+    public void preencherJulgamento(String julgamento) {
+        selecionarCombo(selectJulgamento, julgamento);
     }
 
     public void alterarTipoData(String tipo) {

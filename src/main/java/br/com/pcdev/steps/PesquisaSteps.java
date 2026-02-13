@@ -64,6 +64,11 @@ public class PesquisaSteps {
         page.selecionarMunicipio(municipio);
     }
 
+    @Quando("seleciono o julgamento {string}")
+    public void selecionarJulgamento(String julgamento) {
+        page.preencherJulgamento(julgamento);
+    }
+
     @Quando("altero o tipo de data para {string}")
     public void alterarTipoData(String tipo) {
         page.alterarTipoData(tipo);

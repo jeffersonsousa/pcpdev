@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features",
         glue = "br.com.pcdev.steps",
-        tags = "@cenario6 or @cenario7", // <--- executar somente cenarios especificos
+     // tags = "@cenario8", // <--- executar somente cenarios especificos
         plugin = {"pretty"},
         monochrome = true
 )
