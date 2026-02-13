@@ -77,14 +77,14 @@ Funcionalidade: Validar Filtros de Pesquisa do PCPDev
       | Publicação |
 
     @cenario6
-    # CT006: Busca por Período Específico (Novo)
+    # CT006: Busca por Período Específico
   Cenário: Buscar processos publicados em um intervalo de datas
     Quando informo o período de "08/02/2026" a "11/02/2026"
     E clico em buscar
     Entao devo visualizar a lista de resultados
 
     @cenario7
-  # CT007: O Teste de Ouro - Todos os Filtros Juntos (Novo)
+  # CT007: Todos os Filtros Juntos
   Cenário: Busca refinada com combinação total de filtros
     Quando seleciono o status "Em Andamento"
     E seleciono a modalidade "Pregão"
